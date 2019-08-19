@@ -60,9 +60,10 @@ class App extends Component {
   constructor() {
     super(...arguments)
     auth.renewTokens()
-      .then(success => {
+      .then(_ => {
       }, err => {
         if (err === "Not logged in") {
+          this.setState({ loading: false })
           // we can handle this class of error in the loginEvent
           return
         }

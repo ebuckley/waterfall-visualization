@@ -12,7 +12,6 @@ export default class SubThemeDetails extends Component {
             <span className="text-heading">
                 Subtheme breakdown
             </span>
-
             <dl>
                 {/* <dt>Sentiment</dt>
                 <dd>{subTheme.previousSentiment}</dd>
