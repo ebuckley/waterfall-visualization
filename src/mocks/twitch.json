@@ -1,0 +1,291 @@
+{
+  "counts": {
+    "empty": 0,
+    "nothing": 17,
+    "other": 23,
+    "total": 150
+  },
+  "period": "Q3 2017",
+  "previousCounts": {
+    "empty": 0,
+    "nothing": 7,
+    "other": 14,
+    "total": 127
+  },
+  "previousPeriod": "Q2 2017",
+  "previousScore": {
+    "score": 4.354330708661418
+  },
+  "score": {
+    "score": 4.42
+  },
+  "themes": {
+    "app crashes": {
+      "changeWeighting": 0.032550466492081084,
+      "count": 3,
+      "previousCount": 4,
+      "previousScore": {
+        "score": 2.5
+      },
+      "score": {
+        "score": 3.6666666666666665
+      },
+      "sentiment": 0.2566666603088379,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 2,
+        "pos": 1
+      }
+    },
+    "channels": {
+      "changeWeighting": 0.02114520889480612,
+      "count": 0,
+      "previousCount": 2,
+      "previousScore": {
+        "score": 2.5
+      },
+      "score": {
+        "score": 0
+      }
+    },
+    "good job": {
+      "changeWeighting": -0.03295946867653637,
+      "count": 12,
+      "previousCount": 7,
+      "previousScore": {
+        "score": 4.428571428571429
+      },
+      "score": {
+        "score": 4.166666666666667
+      },
+      "sentiment": 0.15166665613651276,
+      "sentimentCounts": {
+        "neg": 2,
+        "neut": 1,
+        "pos": 9
+      }
+    },
+    "great app": {
+      "changeWeighting": -0.06856751764521837,
+      "count": 51,
+      "previousCount": 51,
+      "previousScore": {
+        "score": 4.627450980392157
+      },
+      "score": {
+        "score": 4.607843137254902
+      },
+      "sentiment": 0.4756861925125122,
+      "sentimentCounts": {
+        "neg": 1,
+        "neut": 2,
+        "pos": 48
+      }
+    },
+    "modes": {
+      "changeWeighting": 0.0021261711423153137,
+      "count": 1,
+      "previousCount": 2,
+      "previousScore": {
+        "score": 4
+      },
+      "score": {
+        "score": 4
+      },
+      "sentiment": 0.10999999940395355,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 0,
+        "pos": 1
+      }
+    },
+    "play games": {
+      "changeWeighting": 0.010469096431833821,
+      "count": 3,
+      "previousCount": 0,
+      "previousScore": {
+        "score": 0
+      },
+      "score": {
+        "score": 5
+      },
+      "sentiment": 0.03999999910593033,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 2,
+        "pos": 1
+      }
+    },
+    "problems on the website": {
+      "changeWeighting": 0.006926119776785669,
+      "count": 2,
+      "previousCount": 3,
+      "previousScore": {
+        "score": 4.333333333333333
+      },
+      "score": {
+        "score": 5
+      },
+      "sentiment": 0.07999999821186066,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 1,
+        "pos": 1
+      }
+    },
+    "switch channels": {
+      "changeWeighting": -0.003710925685229804,
+      "count": 1,
+      "previousCount": 0,
+      "previousScore": {
+        "score": 0
+      },
+      "score": {
+        "score": 4
+      },
+      "sentiment": 0.10999999940395355,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 0,
+        "pos": 1
+      }
+    },
+    "twitch account": {
+      "changeWeighting": 0.0017315299441967196,
+      "count": 2,
+      "previousCount": 0,
+      "previousScore": {
+        "score": 0
+      },
+      "score": {
+        "score": 4.5
+      },
+      "sentiment": 0.06000000238418579,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 1,
+        "pos": 1
+      }
+    },
+    "twitch app": {
+      "changeWeighting": 0.12009681545191014,
+      "count": 20,
+      "previousCount": 15,
+      "previousScore": {
+        "score": 3.8
+      },
+      "score": {
+        "score": 4.9
+      },
+      "sentiment": 0.3070000112056732,
+      "sentimentCounts": {
+        "neg": 1,
+        "neut": 4,
+        "pos": 15
+      }
+    },
+    "ui design": {
+      "changeWeighting": -0.06842775818509475,
+      "count": 6,
+      "previousCount": 8,
+      "previousScore": {
+        "score": 4.875
+      },
+      "score": {
+        "score": 4.166666666666667
+      },
+      "sentiment": 0.18000000715255737,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 2,
+        "pos": 4
+      }
+    },
+    "update twitch": {
+      "changeWeighting": 0.12237603822045777,
+      "count": 17,
+      "previousCount": 17,
+      "previousScore": {
+        "score": 3
+      },
+      "score": {
+        "score": 4.0588235294117645
+      },
+      "sentiment": 0.04176470637321472,
+      "sentimentCounts": {
+        "neg": 1,
+        "neut": 11,
+        "pos": 5
+      }
+    },
+    "use chat": {
+      "changeWeighting": -0.1293216648811961,
+      "count": 9,
+      "previousCount": 6,
+      "previousScore": {
+        "score": 4.166666666666667
+      },
+      "score": {
+        "score": 3
+      },
+      "sentiment": 0.04888888821005821,
+      "sentimentCounts": {
+        "neg": 1,
+        "neut": 5,
+        "pos": 3
+      }
+    },
+    "watch another ad": {
+      "changeWeighting": -0.02979583071840657,
+      "count": 3,
+      "previousCount": 1,
+      "previousScore": {
+        "score": 4
+      },
+      "score": {
+        "score": 3.3333333333333335
+      },
+      "sentiment": 0.1666666716337204,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 0,
+        "pos": 3
+      }
+    },
+    "watch my favourite": {
+      "changeWeighting": 0.027158814977219416,
+      "count": 7,
+      "previousCount": 4,
+      "previousScore": {
+        "score": 4.25
+      },
+      "score": {
+        "score": 5
+      },
+      "sentiment": 0.3742856979370117,
+      "sentimentCounts": {
+        "neg": 0,
+        "neut": 0,
+        "pos": 7
+      }
+    },
+    "watch streams": {
+      "changeWeighting": 0.02329062375832161,
+      "count": 21,
+      "previousCount": 24,
+      "previousScore": {
+        "score": 4.125
+      },
+      "score": {
+        "score": 4.238095238095238
+      },
+      "sentiment": 0.16952380537986755,
+      "sentimentCounts": {
+        "neg": 1,
+        "neut": 6,
+        "pos": 14
+      }
+    }
+  },
+  "unthemedWeighting": 0.030581572040336624
+}

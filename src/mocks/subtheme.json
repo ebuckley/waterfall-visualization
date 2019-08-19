@@ -1,0 +1,28 @@
+{
+  "data": {
+    "dark mode": {
+      "changeWeighting": 0.0021261711423153137, 
+      "count": 1, 
+      "previousCount": 1, 
+      "previousScore": {
+        "score": 4
+      }, 
+      "previousSentiment": 0.18000000715255737, 
+      "previousSentimentCounts": {
+        "neg": 0, 
+        "neut": 0, 
+        "pos": 1
+      }, 
+      "score": {
+        "score": 4
+      }, 
+      "sentiment": 0.10999999940395355, 
+      "sentimentCounts": {
+        "neg": 0, 
+        "neut": 0, 
+        "pos": 1
+      }
+    }
+  }, 
+  "status": "success"
+}

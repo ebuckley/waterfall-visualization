@@ -1,0 +1,60 @@
+
+.waterfall-link {
+    cursor: pointer;
+    fill: none;
+    pointer-events: all;
+    transition: 3s;
+}
+.waterfall-link:hover {
+    fill: #ddd;
+}
+
+.waterfall-score {
+    font-size: 0.15em;
+    fill: #555
+}
+
+
+.highlight-text text {
+    font-size: 0.15em;
+    fill: none;
+    text-anchor: end;
+} 
+
+.waterfall-link:hover .highlight-text text {
+    fill: #555;
+}
+
+
+.bar-score {
+    fill: #555;
+    font-size: 0.3em;
+}
+.bar-period {
+    fill: #222;
+    font-size: 0.15em;
+}
+
+
+.bar rect {
+    fill: none;
+}
+
+.positive {
+    fill: green;
+}
+.negative {
+    fill: red;
+}
+
+.score-bar rect {
+    fill: #ddd;
+}
+
+
+line.dashed-line {
+    stroke: #555;
+    stroke-width: 0.006em;
+}
+
+
