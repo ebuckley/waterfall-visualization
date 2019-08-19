@@ -1,10 +1,10 @@
 # Thematic frontend test
 
-This project implements a watefall visualization, as well as auth0 redirect code flow.
+This project implements a waterfall visualization, as well as auth0 redirect code flow.
 
 ## Configuration
 
-- Copy `auth_config.example.json` to `auth_config.json` and update the `apiBase` field to have the correct api endpoint.
+- Copy `auth_config.example.json` to `auth_config.json` and update the `apiBase` field to have the correct API endpoint.
 
 
 # Extending this project
@@ -33,7 +33,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
+The build is minified, and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
