@@ -1,25 +1,50 @@
+:root {
+
+  --darker: #333;
+  --normal: #555;
+  --lighter: #888;
+  --lightest: #ddd;
+  --primary: #1b9cfc;
+  --highlight: #fd9d32;
+}
+
 body {
   margin: 0;
   font-family: "Muli", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: var(--darker);
 }
 
+h2 {
+  font-weight: lighter;
+}
 
 .text-heading {
+  font-weight: lighter;
   font-size: 1.3em;
+  color: var(--lighter);
+}
+
+a {
+  color: var(--highlight);
+}
+
+a:hover {
+  color: #e07702;
 }
 
 dl {
   display: flex;
   flex-flow: row wrap;
-  border: solid #333;
+  border: solid var(--lightest);
   border-width: 1px 1px 0 0;
 }
 dt {
   flex-basis: 20%;
   padding: 2px 4px;
-  background: #333;
+  background: var(--lightest);
   text-align: right;
   color: #fff;
 }
@@ -28,8 +53,94 @@ dd {
   flex-grow: 1;
   margin: 0;
   padding: 2px 4px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--lightest);
 }
 dt::after{
   content: ":"
+}
+
+/* NAV */
+
+nav {
+  padding: 8px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+nav > * {
+  padding: 0 8px;
+}
+
+/* Dataset report */
+
+
+.dataset-view-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.subtheme-sidebar {
+  flex: 1;
+  overflow-x: hidden;
+  width: auto;
+  min-width: 424px;
+  max-width: 1024px;
+  transition: all 0.3s cubic-bezier(0,1,0.5,1);
+  padding: 8px;
+  border: 1px solid var(--lightest);
+  box-shadow: 2px 2px 2px var(--lightest);
+}
+
+.subtheme-sidebar.hidden {
+  flex: 0;
+  min-width: 0;
+  border: 0;
+  box-shadow: 0;
+  padding: 0;
+}
+
+.sidebar-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.waterfall-container {
+  flex-grow: 1;
+  min-width: 424px;
+  max-width: 1024px;
+}
+.spinner {
+  margin: 0 auto 0;
+  padding-top: 30vh;
+  width: 200px;
+}
+
+/* theme details component */
+.theme-details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0px;
+}
+
+.theme-fact {
+  color: var(--darker);
+  flex-grow: 1;
+  font-size: 2.0em;
+  font-weight: 200;
+  text-align: center;
+  border: 1px solid var(--lightest);
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.theme-fact > .theme-label {
+  font-size: 0.5em;
+  color: var(--lighter);
+}
+
+.theme-fact > .theme-value {
+  font-weight: 500;
+  color: var(--primary);
 }

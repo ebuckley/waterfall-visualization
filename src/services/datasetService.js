@@ -10,3 +10,10 @@ export function getDatasets(datasetName) {
     return ds.get(['datasets', datasetName]);
 }
 
+export function getSubThemes(datasetName, theme) {
+    if (!datasetName || !theme) {
+        return Promise.reject("getSubThemes was called without a dataset or theme parameter");
+    }
+    const ds = new DataService(auth);
+    return ds.get(['datasets', datasetName, theme]);
+}

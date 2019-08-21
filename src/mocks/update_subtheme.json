@@ -1,0 +1,117 @@
+{
+    "bug fix": {
+        "changeWeighting": -0.03890251673500997,
+        "count": 1,
+        "previousCount": 2,
+        "previousScore": {
+            "score": 4
+        },
+        "previousSentiment": 0.2800000011920929,
+        "previousSentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 2
+        },
+        "score": {
+            "score": 3
+        },
+        "sentiment": 0,
+        "sentimentCounts": {
+            "neg": 0,
+            "neut": 1,
+            "pos": 0
+        }
+    },
+    "great update": {
+        "changeWeighting": -0.08827878797561178,
+        "count": 1,
+        "previousCount": 0,
+        "previousScore": {
+            "score": 0
+        },
+        "previousSentiment": 0,
+        "previousSentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 0
+        },
+        "score": {
+            "score": 3
+        },
+        "sentiment": 0.3499999940395355,
+        "sentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 1
+        }
+    },
+    "latest update": {
+        "changeWeighting": 0.22748764593717463,
+        "count": 1,
+        "previousCount": 3,
+        "previousScore": {
+            "score": 2.3333333333333335
+        },
+        "previousSentiment": 0.1133333370089531,
+        "previousSentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 3
+        },
+        "score": {
+            "score": 1
+        },
+        "sentiment": 0.28999999165534973,
+        "sentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 1
+        }
+    },
+    "previous version": {
+        "changeWeighting": -0.022069696993904885,
+        "count": 1,
+        "previousCount": 0,
+        "previousScore": {
+            "score": 0
+        },
+        "previousSentiment": 0,
+        "previousSentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 0
+        },
+        "score": {
+            "score": 4
+        },
+        "sentiment": 0.23000000417232513,
+        "sentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 1
+        }
+    },
+    "ui update": {
+        "changeWeighting": 0.04413939398780977,
+        "count": 1,
+        "previousCount": 0,
+        "previousScore": {
+            "score": 0
+        },
+        "previousSentiment": 0,
+        "previousSentimentCounts": {
+            "neg": 0,
+            "neut": 0,
+            "pos": 0
+        },
+        "score": {
+            "score": 5
+        },
+        "sentiment": 0,
+        "sentimentCounts": {
+            "neg": 0,
+            "neut": 1,
+            "pos": 0
+        }
+    }
+}

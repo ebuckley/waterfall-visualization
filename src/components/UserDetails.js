@@ -12,7 +12,7 @@ export default function UserDetails(params) {
     if (user) {
         loginOrLogout = (
             <span>
-                Hello {user.profile.nickname}
+                Hello {user.profile.nickname} &nbsp;
                 <button onClick={onLogout}>LOG OUT</button>
             </span>
         )

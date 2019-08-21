@@ -1,0 +1,32 @@
+.barchart-bar {
+    fill: green;
+}
+.negative {
+    fill: red;
+}
+
+.barchart-label {
+    font-size: 0.3em;
+    fill: #555;
+}
+
+/* chart containers */
+
+.butterflychart-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    border: 1px solid var(--lightest);
+    max-width: 1024px;
+}
+.butterflychart-wrapper figure {
+    width: calc(50% - 8px);
+    margin: 4px;
+    padding-bottom: 8px;
+}
+
+.graph-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+}

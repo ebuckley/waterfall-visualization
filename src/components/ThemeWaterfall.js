@@ -103,16 +103,16 @@ function getTheme(dataset, key) {
     return dataset.themes[key];
 }
 // Build context required to render the graph
-function buildGraphcontext(dataset, barClicked, clickedDrawLink) {
+function buildGraphcontext(dataset, clickedDrawLink) {
 
     const domain = getDomain(dataset);
 
 
     function Bar({ period, score, y }) {
-        return (<g onClick={() => barClicked(period, score)} className="bar">
+        return (<g className="bar">
             <rect className="score-bar" y={y} width={domain.posX(score)} height={BAR_WIDTH}></rect>
-            <text dominant-baseline="middle" className="bar-score" dx="1%" x={domain.posX(score)} y={y + (BAR_WIDTH * 0.35)}>{roundNumber(score)}</text>
-            <text dominant-baseline="middle" className="bar-period" dx="1%" x={domain.posX(score)} y={y + (BAR_WIDTH * 0.6)}>{period}</text>
+            <text dominantBaseline="middle" className="bar-score" dx="1%" x={domain.posX(score)} y={y + (BAR_WIDTH * 0.35)}>{roundNumber(score)}</text>
+            <text dominantBaseline="middle" className="bar-period" dx="1%" x={domain.posX(score)} y={y + (BAR_WIDTH * 0.6)}>{period}</text>
         </g >)
     }
 
@@ -141,13 +141,13 @@ function buildGraphcontext(dataset, barClicked, clickedDrawLink) {
         }
         return (<g onClick={() => clickedDrawLink(key)} key={key} className="waterfall-link" >
             <rect className="highlight-bar" y={y} width={VIEWBOX_X} height={BAR_WIDTH}></rect>
-            <line className="dashed-line" stroke-dasharray="0.5" x1={lineX} y1={y1} x2={lineX} y2={y2 + 2}></line>
+            <line className="dashed-line" strokeDasharray="0.5" x1={lineX} y1={y1} x2={lineX} y2={y2 + 2}></line>
             <rect className={className} y={y + (barSpace * 0.5)} x={xPosition} width={width} height={BAR_WIDTH - barSpace}></rect>
-            <text dominant-baseline="middle" className="waterfall-score" x="2%" y={y + (BAR_WIDTH * 0.4)}>{key}</text>
-            <text dominant-baseline="middle" className="waterfall-score" dx="1%" x={xPosition + width} y={y + (BAR_WIDTH * 0.4)}>{roundNumber(changeWeighting)}</text>
+            <text dominantBaseline="middle" className="waterfall-score" x="2%" y={y + (BAR_WIDTH * 0.4)}>{key}</text>
+            <text dominantBaseline="middle" className="waterfall-score" dx="1%" x={xPosition + width} y={y + (BAR_WIDTH * 0.4)}>{roundNumber(changeWeighting)}</text>
 
             <g className="highlight-text">
-                <text dominant-baseline="middle" dx="-1%" x={xPosition} y={y + (BAR_WIDTH * 0.4)}> {highlightMessage}</text>
+                <text dominantBaseline="middle" dx="-1%" x={xPosition} y={y + (BAR_WIDTH * 0.4)}> {highlightMessage}</text>
             </g>
         </g>)
     }
@@ -171,40 +171,25 @@ export default class ThemeWaterfall extends Component {
 
         const viewbox_y = getNumberOfBars(dataset) * BAR_WIDTH;  // TODO get graph range based on number of themes to display.
 
-
-        const barClicked = (period, score) => {
-            console.log('clicked bar', period, score)
-
-        }
-
         const clickedDrawLink = (key) => {
             const theme = getTheme(dataset, key);
-            console.log('clickedDrawLink', theme)
+            if (this.props.onSelectTheme) {
+                this.props.onSelectTheme(key, theme);
+            }
         }
 
-        const { Bar, DrawLink, domain } = buildGraphcontext(dataset, barClicked, clickedDrawLink);
+        const { Bar, DrawLink, domain } = buildGraphcontext(dataset, clickedDrawLink);
         const links = datasetToLinksModel(dataset, domain)
         const finalX = domain.posX(dataset.score.score);
 
         return (
             <figure>
-                {/* <figcaption className="text-heading">Change in Theme</figcaption> */}
-                {/* <dl>
-                    <dt>cumulativeChange</dt><dd>{getCumulativeChange(dataset)}</dd>
-                    <dt>maximumValue</dt><dd>{getMaximumScore(dataset)}</dd>
-                    <dt>minimumScore</dt><dd>{getMinimumScore(dataset)}</dd>
-                    <dt>domain</dt><dd>{JSON.stringify(getDomain(dataset))}</dd>
-                </dl> */}
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" className="chart" preserveAspectRatio="xMidYMid meet" viewBox={`0 0 ${VIEWBOX_X} ${viewbox_y}`} aria-labelledby="title" role="img">
-                    <g id="vis">
-
-                        <title id="title">An interactive waterfall chart showing theme performance for the current period</title>
-                        <Bar period={dataset.previousPeriod} score={dataset.previousScore.score} y="0" />
-                        {links.map(DrawLink)}
-                        <line className="dashed-line" stroke-dasharray="0.5" x1={finalX} y1={viewbox_y - BAR_WIDTH - 5} x2={finalX} y2={viewbox_y - BAR_WIDTH + 5}></line>
-                        <Bar period={dataset.period} score={dataset.score.score} y={viewbox_y - BAR_WIDTH} />
-
-                    </g>
+                    <title id="title">An interactive waterfall chart showing theme performance for the current period</title>
+                    <Bar period={dataset.previousPeriod} score={dataset.previousScore.score} y="0" />
+                    {links.map(DrawLink)}
+                    <line className="dashed-line" strokeDasharray="0.5" x1={finalX} y1={viewbox_y - BAR_WIDTH - 5} x2={finalX} y2={viewbox_y - BAR_WIDTH + 5}></line>
+                    <Bar period={dataset.period} score={dataset.score.score} y={viewbox_y - BAR_WIDTH} />
                 </svg>
             </figure >)
     }
