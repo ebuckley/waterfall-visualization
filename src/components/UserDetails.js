@@ -1,23 +1,27 @@
-import React from 'react';
-import auth from '../services/authService';
+import React from 'react'
+import auth from '../services/authService'
 
-export default function UserDetails(params) {
-    const { user } = params;
-    const onLoginClick = () => auth.login()
-    const onLogout = () => auth.logOut()
+export default function UserDetails (params) {
+  const { user } = params
+  const onLoginClick = () => auth.login()
+  const onLogout = () => auth.logOut()
 
-    let loginOrLogout = (<button onClick={onLoginClick}>
+  let loginOrLogout = (
+    <button onClick={onLoginClick}>
         Login or Register
-        </button>)
-    if (user) {
-        loginOrLogout = (
-            <span>
+    </button>
+  )
+  if (user) {
+    loginOrLogout = (
+      <span>
                 Hello {user.profile.nickname} &nbsp;
-                <button onClick={onLogout}>LOG OUT</button>
-            </span>
-        )
-    }
-    return <div>
-        {loginOrLogout}
+        <button onClick={onLogout}>LOG OUT</button>
+      </span>
+    )
+  }
+  return (
+    <div>
+      {loginOrLogout}
     </div>
+  )
 }
